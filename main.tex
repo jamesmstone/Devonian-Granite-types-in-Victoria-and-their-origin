@@ -1,7 +1,7 @@
 \documentclass[a4paper]{article}
 
 \usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
@@ -10,7 +10,19 @@
 \usepackage[version=3]{mhchem}
 \usepackage{float}
 
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fontspec}
 
+\setmainfont{Lato} 
+\setsansfont{Trebuchet MS} 
+\setmonofont{Inconsolata} 
+% Specify different font for section headings
+\newfontfamily\headingfont[]{Georgia}
+\titleformat*{\section}{\LARGE\headingfont}
+\titleformat*{\subsection}{\Large\headingfont}
+\titleformat*{\subsubsection}{\large\headingfont}
+\renewcommand{\maketitlehooka}{\headingfont}
 
 \bibliographystyle{agsm}
 
@@ -59,7 +71,7 @@ The more mafic the granite, the closer it resembles its source rocks, and the ea
 
 
 \subsection{S-type}
-S-type granites are composed of sedimentary rocks that have undergone anatexis.
+S-type granites are composed of sedimentary rocks that have undergone anatexis.Chappel and White, (1984) describes these sources as \textit{supracrustal}.
 Petrologically, they are more likely to contain meta-sedimentary xenoliths.S-type granites have a chemical composition that is relatively higher in sodium and calcium. It is thought that this distinction is the result of calcium enrichment in carbonate ans calcareous sediments and sodium enrichment through concentration on salt water and subsequent evaporation and capture as evaporitic sediments. 
 
 \subsubsection{Chemical Composition}
@@ -76,7 +88,7 @@ Higher Calcium
 blah blah as above
 
 \subsection{I type}
-I-types granites are derived from igneous source material. Petrologically, they often contain mafic hornblende-bearing xenoliths
+I-types granites are derived from igneous source material. Chappel and White describe these sources as being generally \textit{infracrustal}.Petrologically, they often contain mafic hornblende-bearing xenoliths.
 
 \subsubsection{Chemical Composition}
 Lower Sodium
@@ -90,9 +102,38 @@ Mol. \ce{Al2O3 // ( Na2O + K2O + CaO)} \textgreater 1.1
 \subsection{High and Low Temperature Granites}
 Because felsic granites have similar major element geochemistry, a newer classification for the granites of Victoria has been proposed by Chappell, Bryant, etc and is temperature based. This classification utilises trace element geochemistry. As an example, S-type granites have high P and low Th and Ce relative abundance, compared to I-types \cite{chappell1998high}. Despite this classification system being different to S and I type granites, the higher temperature granites are generally classified as A type granites (felsic composition) or I type granites (mafic composition). Lower temperature granites being classified as S type and the remaining I type granites. These comprise \textasciitilde 90 \% of the Lachlan fold belt. \cite{chappell2001two}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{Aluminium_Saturation_Index.jpg}
+\caption{\label{fig:AluminiumSaturationIndex}Aluminium Saturation Index. From: \cite{chappell1998high}}
+\end{figure}
+
+Whilst the above classification is diagnostic in most cases, and useful in describing the granite's source, there Cobaw is a rare example of a zoned intrusion: a central hornblendebearing
+I-type granite, the Baynton Granodiorite (375 km2
+) is surrounded by a 1-6 km wide
+rim of the cordierite-bearing S-type Pyalong Adamellite (225 km2
+). The complex is
+undeformed and stitches the Heathcote Fault Zone which separates low-grade turbidites of
+Ordovician (west) and Silurian age (east). The fault zone itself exposes Cambrian greenstones
+and shales. Field observations at Cobaw support a model of simultaneous emplacement of
+contrasting but genetically related felsic magmas (Fermio 1984). In this model, invasion of
+hot I-type magma (with a mantle-derived magma component) into mid-crustal metasediments
+produced S-type magma. Upwelling of the more primitive granite magma into the anatectic
+zone, followed by joint emplacement and high-level ballooning produced the gradational,
+convoluted contacts between, and the concentric arrangement of, the two granite phases.
+K-Ar, Ar-Ar and SHRIMP U-Pb data support essentially simultaneous emplacement at
+367 ± 2 Ma. The complex therefore appears suitable for exploring possible genetic links
+between the two granite types; these may in turn be used to test if some S-type magmas could
+indeed be p
+
 \subsection{The Geological Setting}
 
-It h
+It is evident that, in a general sense, the present day location of S-type granites in Victoria, (and the Lachlan Fold Belt) is further to the west than I-type granites. This supports the theory that the sedimentary source of the S-types is the continental crust of the older Pre-Cambrian Delamerian Fold Belt Sediments which immediately underlay the Lachlan Fold Belt to the West. The predominance of I-type granites further to the east also supports the theory that in this location, there was less shallow crustal and more deeper crustal, shallow mantle involvement.
+
+During the early Ordovician, (ca. 430Ma), the Benambran Orogeny resulted in the accretion of the intra-oceanic Macquarie Arc to the Gondwana Plate, \cite{BenambranOrogeny}.  During this period, the Panthalassan Oceanic plate subducted under Gondwana, as depicted in  Figure~\ref{fig:GraniteModels}. There are two models described in this diagram, the Retreating Accretionary Orogen "Accordian" Model and the Subduction Flip Model, (S, Buckman). Importantly, both models satisfy the requirement for S-type sedimentary sourced granites closer to the Gondwanan margin and I-type granites further East.
+
+Typical ages of granites in Victoria are from 340 to 440Ma, see  Figure~\ref{fig:GraniteTypes} implying that it took up to 90Ma for the source rock to heat up enough and become mobilised in the crust to form granites.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{granite_models.jpg}
@@ -127,6 +168,7 @@ VicStructuralZones}Map of eastern Australian fold belts and Victorian structural
 \section{Conclusion}
 
 Conclusion
+
 
 
 \newpage
